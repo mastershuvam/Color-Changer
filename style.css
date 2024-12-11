@@ -1,0 +1,124 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  
+  nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background-color: #f4f4f4;
+  }
+  
+  
+  nav a {
+    text-decoration: none;
+    color: #0073e6;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: 2px solid #0073e6;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  
+  nav a:hover {
+    background-color: #0073e6;
+    color: white;
+  }
+  
+  
+  .canvas {
+    margin: 50px auto;
+    width: 80%;
+    max-width: 600px; 
+    text-align: center;
+  }
+  
+  
+  .button {
+    width: 100px;
+    height: 100px;
+    border: solid black 2px;
+    display: inline-block;
+    margin: 10px;
+    cursor: pointer;
+    transition: transform 0.2s ease, border-color 0.2s ease;
+  }
+  
+  .button:hover {
+    transform: scale(1.1);
+    border-color: #ff6600;
+  }
+  
+  #grey {
+    background: grey;
+  }
+  
+  #white {
+    background: white;
+  }
+  
+  #blue {
+    background: blue;
+  }
+  
+  #yellow {
+    background: yellow;
+  }
+  
+  
+  button {
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #0073e6;
+    color: white;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #005bb5;
+  }
+  
+  
+  .active {
+    border-color: red !important;
+  }
+  
+  
+  @media (max-width: 768px) {
+    .canvas {
+      width: 90%; 
+    }
+  
+    .button {
+      width: 80px;
+      height: 80px; 
+    }
+  
+    button {
+      font-size: 14px; 
+      padding: 8px 16px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .button {
+      width: 60px;
+      height: 60px;
+    }
+  
+    button {
+      font-size: 12px;
+      padding: 6px 12px;
+    }
+  }
+  
